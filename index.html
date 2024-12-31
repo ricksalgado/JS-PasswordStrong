@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" type="text/css" rel="stylesheet">
+
+    <title>Password Verify</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Verify Password</h2>
+        <p>Insert a password to verify how strong it is</p>
+        <input type="password" id="password-Input" placeholder="Type your password">
+        <div class="password-strength-bar">
+            <div id="password-strength-indicator" class="strength-indicator">
+            </div>
+        </div>
+        <p id="password-strength-text"></p>
+        <p id="tip">
+            Your password needs to have uppercase letters, lowercase letters, numbers, and special characters.
+        </p>
+    </div>
+
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

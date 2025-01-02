@@ -12,7 +12,8 @@ passwordInput.addEventListener("input", function () {
         1: "Weak",
         2: "Good",
         3: "Strong",
-        4: "Very strong"
+        4: "Very strong",
+        5: "Impossible"
     }
 
     let score = 0;
@@ -30,6 +31,9 @@ passwordInput.addEventListener("input", function () {
     strengthIndicator.style.width = `${width}%`;
 
     switch (score) {
+        case 0:
+            strengthIndicator.style.backgroundColor = "transparent";
+            break;
         case 1:
             strengthIndicator.style.backgroundColor = "#e70b0b";
             break;
@@ -42,9 +46,9 @@ passwordInput.addEventListener("input", function () {
         case 4:
             strengthIndicator.style.backgroundColor = "#81C784";
             break;
-        default:
-            strengthIndicator.style.backgroundColor = "transparent";
-            break;
+        // default:
+        //     strengthIndicator.style.backgroundColor = "#81C784";
+        //     break;
 
     }
 

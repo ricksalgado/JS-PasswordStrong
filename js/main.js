@@ -3,7 +3,7 @@ const passwordInput = document.querySelector('#password-Input');
 passwordInput.addEventListener("input", function(){
 const password = this.value;
 
-const strengthIndicator = document.querySelector('#password-strength-indicator')
+const strengthIndicator = document.querySelector('#password-strength-indicator');
 
 const strengthText = document.querySelector('#password-strength-text');
 
@@ -18,11 +18,11 @@ const strength = {
 let score = 0;
 
 // Requirements
-if(password.length >= 8) score++;
+if (password.length >= 8) score++;
 
-const width = (score/4)*100;
+const width = (score / 4) * 100;
 
-strengthIndicator.computedStyleMap.width = width + `${width}%`;
+strengthIndicator.style.width = `${width}%`;
 
 
 if (password.length > 0) {
